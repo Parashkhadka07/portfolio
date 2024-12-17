@@ -1,10 +1,10 @@
 import React from "react";
 import "./Body1.css";
 import profile from "../../assets/image.jpg";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const Body1 = () => {
   return (
-    <div className="Body1">
+    <div id="home" className="Body1">
       <img src={profile} alt="" className="src" />
       <h1>
         <span>I'm Parash khadka</span>, Currently learning Programming
@@ -20,7 +20,12 @@ const Body1 = () => {
         solutions. Let’s connect and grow together!
       </p>
       <div className="action">
-        <div className="connect">Connect with me</div>
+        <div className="connect">
+          {" "}
+          <AnchorLink className="anchor-link" offset={50} href="#contactme">
+            Connect with me
+          </AnchorLink>
+        </div>
         <div className="resume">My resume</div>
       </div>
     </div>

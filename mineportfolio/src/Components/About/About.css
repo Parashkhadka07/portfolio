@@ -1,0 +1,87 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.Title {
+  position: relative;
+}
+.About h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.about-sections {
+  display: flex;
+  gap: 80px;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.skill {
+  display: flex;
+
+  gap: 50px;
+  align-items: center;
+  transition: 0.3s;
+}
+.skill p {
+  min-width: 150px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.skill hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0b4);
+}
+.skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .About {
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .Title h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+  .about-sections {
+    flex-direction: column;
+  }
+  .about-left {
+    display: none;
+  }
+  .para {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .skill {
+    gap: 20px;
+    align-items: center;
+  }
+  .skill p {
+    font-size: 20px;
+  }
+  .skill hr {
+    height: 6px;
+  }
+}
