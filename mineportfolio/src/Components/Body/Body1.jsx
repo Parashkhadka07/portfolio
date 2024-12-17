@@ -2,7 +2,11 @@ import React from "react";
 import "./Body1.css";
 import profile from "../../assets/image.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import resume from "../../assets/Resume.pdf";
 const Body1 = () => {
+  const resumes = () => {
+    window.open(resume, "_blank"); // Opens the PDF in a new tab
+  };
   return (
     <div id="home" className="Body1">
       <img src={profile} alt="" className="src" />
@@ -26,7 +30,9 @@ const Body1 = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="resume">My resume</div>
+        <div className="resume" onClick={resumes}>
+          My resume
+        </div>
       </div>
     </div>
   );
